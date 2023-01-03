@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="syllabus.css">
+    <title>Syllabus</title>
+</head>
+
+<body oncontextmenu="return false">
+    <!-- NAVIGATION BAR -->
+    <nav id="navbar">
+        <div id="logo">
+            <a href="index.html"> <img class="logo" src="https://i.postimg.cc/VN7J9vPR/vtcbb.jpg" alt=""></a>
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="syllabus.html">Syllabus</a></li>
+            <li><a href="chapter.html">Old paper</a></li>
+            <li><a href="contact.html">Contact us</a></li>
+        </ul>
+    </nav> 
+    <section class="services-container">
+        <h1 class="h-primary-center">ALL SUBJECT SYLLABUS</h1>
+        <div id="services">
+            <div class="box zoom" id="ex1">
+                <img src="image/se2.jpeg" id="im1" alt="">
+                <h2 class="h-secondary-center">Software engi</h2>
+                <p class="center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione officia similique
+                    minus eveniet dicta cupiditate, odit, sequi alias magnam aspernatur adipisci amet soluta quo sunt!
+                    Necessitatibus ullam nobis maxime illum sequi dolorem nesciunt ab?</p>
+                <button type="button" class="bt" onclick="return confirm('You Can Download syllabus') "><b><a
+                            class="click1" href="pdf/sesy.pdf" download="sesy.pdf">Download Now</a></b></button>
+            </div>
+            <div class="box zoom">
+                <img src="image/statbook.jpg" id="im1" alt="">
+                <h2 class="h-secondary-center">Statistical Method</h2>
+                <p class="center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione officia similique
+                    minus eveniet dicta cupiditate, odit, sequi alias magnam aspernatur adipisci amet soluta quo sunt!
+                    Necessitatibus ullam nobis maxime illum sequi dolorem nesciunt ab?</p>
+                <button type="button" class="bt" onclick="return confirm('You Can Download syllabus')"><b><a
+                            class="click1" href="/statsy.pdf" download="Statistical Method.pdf">Download
+                            Now</a></b></button>
+            </div>
+            <div class="box zoom">
+                <img src="image/prbook.jpeg" id="im1" alt="">
+                <h2 class="h-secondary-center">Practical</h2>
+                <p class="center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione officia similique
+                    minus eveniet dicta cupiditate, odit, sequi alias magnam aspernatur adipisci amet soluta quo sunt!
+                    Necessitatibus ullam nobis maxime illum sequi dolorem nesciunt ab?</p>
+                <button type="button" class="bt" onclick="return confirm('You Can Download syllabus')"><b><a class="click1"
+                            href="/prsy.pdf" download="Practical.pdf">Download Now</a></b></button>
+            </div>
+            <div class="box zoom">
+                <img src="image/oopbook.jpg" id="im1" alt="">
+                <h2 class="h-secondary-center">Object Oriented</h2>
+                <p class="center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione officia similique
+                    minus eveniet dicta cupiditate, odit, sequi alias magnam aspernatur adipisci amet soluta quo sunt!
+                    Necessitatibus ullam nobis maxime illum sequi dolorem nesciunt ab?</p>
+                <button type="button" class="bt"
+                    onclick="return confirm('You Can Download syllabus')"><b><a class="click1"
+                            href="/oopsy.pdf" download=" Object Oriented Programming.pdf">Download Now</a></b></button>
+            </div>
+            <div class="box zoom">
+                <img src="image/wdbook.jpg" id="im1" alt="">
+                <h2 class="h-secondary-center">Web Desinging</h2>
+                <p class="center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione officia similique
+                    minus eveniet dicta cupiditate, odit, sequi alias magnam aspernatur adipisci amet soluta quo sunt!
+                    Necessitatibus ullam nobis maxime illum sequi dolorem nesciunt ab?</p>
+                <button type="button" class="bt" onclick="return confirm('You Can Download syllabus')"><b><a
+                            class="click1" href="wd.html" download="Web Desinging.pdf">Download Now</a></b></button>
+            </div>
+        </div> 
+
+    </section> 
+    <script>
+        function myFunction() {
+          var txt;
+          if (confirm("Download the syllabus")) {
+            txt = "You pressed OK!";
+          } else {
+            txt = "You pressed Cancel!";
+          }
+          document.getElementById("demo").innerHTML = txt;
+        }
+        </script>
+</body>
+
+</html>

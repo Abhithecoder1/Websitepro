@@ -1,0 +1,153 @@
+/*Navigation bar: Logo and Image  */
+#navbar {
+    display: flex;
+    align-items: center;
+    top: -8px;
+    position: relative;
+    border-radius: 15px;
+}
+
+#logo {
+    margin: 10px 34px;
+}
+
+#logo img {
+    height: 90px;
+    width: 90px;
+    margin: 5px -20px;
+    border-radius: 50px;
+}
+
+#navbar ul {
+    display: flex;
+    font-family: 'Baloo Bhai';
+    font-size: 22px;
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1.2rem;
+}
+
+#navbar ul li a {
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+}
+
+#navbar ul li a:hover {
+    color: white;
+    background-color: black;
+}
+
+#navbar::before {
+    content: "";
+    background-color: #333;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+    border-radius: 15px;
+}
+
+/* contact section */
+
+table,
+th,
+td {
+    border: 2px solid black;
+    margin: 20px;
+    font-weight: bold;
+    font-size: larger;
+    justify-content: center;
+    text-align: center center;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+input {
+    font-weight: bold;
+    font-size: large;
+}
+
+
+#fname,
+#mname,
+#lname,
+#male,
+#ename,
+#password {
+    border-radius: 20px;
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+}
+
+
+.btn {
+    padding: 6px 150px;
+    width: auto;
+    font-weight: bold;
+    font-size: large;
+    text-align: center;
+    border-radius: 20px;
+}
+
+body {
+    color: black;
+    background: url('/image/contact.jpg') no-repeat center center/cover;
+}
+
+#contact {
+    position: relative;
+}
+
+#contact::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+#contact-box form {
+    width: 40%;
+
+}
+
+#contact-box label {
+    font-size: 1.3rem;
+    font-family: 'Lato', sans-serif;
+}
+
+#contact-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+
+#contact-box input,
+#contact-box textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+}
+.btn:hover{
+    transition: transform 0.4s;
+    transform: scale(1.1);
+    background-color: black;
+    color: white;
+}

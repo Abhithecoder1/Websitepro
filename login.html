@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <title>Login</title>
+</head>
+
+<body oncontextmenu="return false">
+    <!-- NAVIGATION BAR -->
+    <nav id="navbar">
+        <div id="logo">
+            <a href="index.html"> <img class="logo" src="https://i.postimg.cc/VN7J9vPR/vtcbb.jpg" alt=""></a>
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="syllabus.html">Syllabus</a></li>
+            <li><a href="chapter.html">Chapters</a></li>
+            <li><a href="contact.html">Contact us</a></li>
+        </ul>
+    </nav>
+    <!-- Login box -->
+    <div class="center">
+        <h1>Login</h1>
+        <form method="POST" action="index.html" onclick="return login()">
+            <tr>
+                <td><label class="l1" for="user">Username:</label></td>
+                <td><input type="email" name="username" id="user" required></td>
+            </tr>
+            <br>
+            <br>
+
+            <tr>
+                <td>
+                    <label class="l1" for="password">Password:</label>
+                </td>
+                <td>
+                    <input type="password" name="password" id="password" maxlength="10" required>
+                </td>
+            </tr>
+            <br>
+            <br>
+            <tr>
+                <td>
+                    <input type="submit" value="Login" id="login" onsubmit="redirect()">
+                </td>
+            </tr>
+            <br>
+            <br>
+        </form>
+    </div>
+    <script>
+
+        function redirect() {
+            location.href = "index.html";
+        }
+
+        // USER NAME
+        function login()
+			{
+                alert("hii");
+				var u=document.getElementById("user").value;
+				var t=document.getElementById("password").value;
+				if(u=="abhay5gmail.com"&& t=="123")
+				{
+					//alert("login successfully");
+					document.getElementById("login").innerHTML=<div onclick="alert('successfully')" >Login Success</div>;
+					return false;
+				}
+				else
+				{
+					document.getElementById("login").innerHTML=<div onclick="alert('successfully')">Invvalid Username or Password</div>;
+					return false;
+				//	alert("invalid username and password");
+				}
+			}
+    </script>
+</body>
+
+</html>
