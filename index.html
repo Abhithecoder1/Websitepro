@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VTCBCSR</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+
+            $(".read3").click(function () {
+                $("#p").slideToggle();
+            });
+
+            $(".read5").click(function () {
+                $("#p1").slideToggle();
+            });
+
+            $(".read7").click(function () {
+                $("#p2").slideToggle();
+            });
+
+            $("#btn-lm").click(function () {
+                $("#p3").slideToggle();
+            });
+            $("#btn-lm").click(function () {
+                $("#b1").prop("value","read More");
+            });
+            
+        });
+
+        
+    </script>
+    <link rel="stylesheet" href="style.css">
+
+<body oncontextmenu="return false">
+
+    <!-- NAVIGATION BAR -->
+    <nav id="navbar">
+        <div id="logo">
+            <a href="index.html"> <img class="logo" src="https://i.postimg.cc/VN7J9vPR/vtcbb.jpg" alt=""></a>
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="syllabus.html">Syllabus</a></li>
+            <li><a href="chapter.html">Old paper</a></li>
+            <li><a href="contact.html">Contact us</a></li>
+        </ul>
+
+        <div class="lo">
+            <a href="login.html" title="Login" target="_blank"><img src="/image/l.jfif" alt="" width="300"
+                    height="300"></a>
+        </div>
+    </nav>
+    <!-- HOME -->
+    <section id="home">
+        <h1 class="h-primary">Welcome to Vidyabharti Trust College of BBA And BCA</h1>
+        <p><b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae temporibus amet reiciendis.</b></p>
+        <p><b>Lorem ipsum dolor sit amet consectetur adipisicing elit. </b></p>
+        <p id="p3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores vero voluptatum harum quis adipisci
+            ullam quae recusandae quidem rem, dolorem doloribus vitae expedita, quod eius qui? Earum, eum incidunt. Quo
+            accusamus illum aspernatur blanditiis, corrupti quasi consequuntur magnam molestiae doloribus aliquam
+            ducimus laborum eius quis. Aliquid, esse tenetur. Totam nemo iusto quam tempore hic at, autem suscipit
+            nesciunt, enim nobis, itaque minima aspernatur soluta vel? </p>
+        <button type="button" id="btn-lm" class="btn btn-primary"><b id="b1">Learn Less</b></button>
+    </section>
+    <!-- SERVICES -->
+    <section class="services-container">
+        <h1 class="h-primary-center">Student Corner</h1>
+        <div id="services">
+            <div class="box zoom">
+                <img src="image/sy.jpg" id="im1" alt="">
+                <h2 class="h-secondary-center">SYLLABUS</h2>
+                <p class="center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione officia similique
+                    minus eveniet dicta cupiditate, odit, sequi alias magnam aspernatur adipisci amet soluta quo sunt!
+                    Necessitatibus ullam nobis maxime illum sequi dolorem nesciunt ab?</p>
+                <p id="p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, ad impedit? Non dicta
+                    repudiandae quae rerum. Id dolore laudantium repudiandae, nobis deleniti pariatur?</p>
+                <button class="read3">Read more</button>
+                <button type="button" class="bt" onclick="return confirm('You Can Access Syllabus')"><b><a
+                            class="click1" href="syllabus.html" target="_blank">Click Me</a></b></button>
+            </div>
+            <div class="box zoom">
+                <img src="image/paper.jpg" id="im1" alt="">
+                <h2 class="h-secondary-center">OLD PAPERS</h2>
+                <p class="center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione officia similique
+                    minus eveniet dicta cupiditate, odit, sequi alias magnam aspernatur adipisci amet soluta quo sunt!
+                    Necessitatibus ullam nobis maxime illum sequi dolorem nesciunt ab?</p>
+                <p id="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, ad impedit? Non dicta
+                    repudiandae quae rerum. Id dolore laudantium repudiandae, nobis deleniti pariatur?</p>
+                <button class="read5">Read more</button><br>
+                <button type="button" class="bt" onclick="return confirm('You Can Access Old Paper')"><b><a
+                            class="click1" href="/chapter.html">Click Me</a></b></button>
+            </div>
+            <div class="box zoom">
+                <img src="image/contact.jpg" id="im1" alt="">
+                <h2 class="h-secondary-center">CONTACT US</h2>
+                <p class="center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione officia similique
+                    minus eveniet dicta cupiditate, odit, sequi alias magnam aspernatur adipisci amet soluta quo sunt!
+                    Necessitatibus ullam nobis maxime illum sequi dolorem nesciunt ab?</p>
+                <p id="p2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, ad impedit? Non dicta
+                    repudiandae quae rerum. Id dolore laudantium repudiandae, nobis deleniti pariatur?</p>
+                <button class="read7">Read more</button><br>
+                <button type="button" class="bt" onclick="return confirm('You Can Access Old Paper')"><b><a
+                            class="click1" href="contact.html">Click Me</a></b></button>
+            </div>
+        </div>
+    </section>
+    <h1 class="h-primary-center">College Photos</h1>
+    <div class="ani">
+
+    </div>
+    <footer>
+        <div class="center">Copyright &copy;www.VTCBCSR.com. All rights reserved </div>
+    </footer>
+</body>
+
+</html>
